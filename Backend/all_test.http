@@ -1,0 +1,37 @@
+###
+POST http://localhost:3003/api/login
+content-type: application/json
+
+{
+  "username" : "testUsername",
+  "password" : "123456"
+}
+
+###
+POST http://localhost:3003/api/users
+content-type: application/json
+
+{
+  "username" : "test123",
+  "password" : "123456"
+}
+
+
+###
+POST http://localhost:3003/api/courses/:1
+content-type: application/json
+Authorization: : bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RVc2VybmFtZSIsImlkIjoiNjYxNTdjNTY5N2U0N2ZjNmEyNGI5NmFlIiwiaWF0IjoxNzE0MDc0NjU5fQ.cUnSlcelNUz3y_80O11EekPtKcJfTMWqusKaV3M4fBM
+
+{
+  "comment": "Nice class",
+  "userId": "66157c5697e47fc6a24b96ae"
+}
+
+###
+POST http://localhost:3003/api/courses/1
+content-type: application/json
+
+{
+  "comment": "Nice class",
+  "userId": "66157c5697e47fc6a24b96ae"
+}
