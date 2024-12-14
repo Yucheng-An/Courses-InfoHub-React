@@ -29,7 +29,7 @@ app.use("/api/courses", coursesRouter);
 app.use("/api/users", usersRouter);
 
 app.get("/", async (request, response) => {
-  await response.send("<h1>This is Backend of final project, GET method </h1>");
+  await response.send("<h1>This is backend of final project, GET method </h1>");
 });
 
 app.use("/api/login", loginRouter);
